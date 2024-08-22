@@ -111,28 +111,28 @@
 
 2. Jelaskan perbedaan antara IP Private & Public, serta IP Dynamic & Static!
 
-IP Private
-```
-- Alamat IP yang digunakan dalam jaringan lokal pribadi dan tidak dapat diakses>
-- Digunakan pada jaringan rumah ataupun kantor.
-- Tidak bersifat unik sehingga setiap orang bebas menggunakannya.
-```
-
-IP Public
-```
-- Alamat IP unik yang diberikan kepada perangkat untuk diidentifikasi di intern>
-- Dapat berkomunikasi di seluruh jaringan global.
-- Bersifat unik dan tidak ada yang sama di setiap pengguna jaringan.
-```
-
-IP Dynamic (DHCP)
-```
-- Alamat IP yang dapat berubah setiap kali perangkat terhubung ke dalam jaringa>
-- Sebagian besar digunakan dalam skala perumahan.
-```
-
-IP Static
-```
-- Alamat IP yang tetap (tidak berubah) memiliki alamat yang sama setiap kali te>
-- Digunakan oleh layanan publik yang memerlukan koneksi stabil dan alamat web y>
-```
+      IP Private
+      ```
+      - Alamat IP yang digunakan dalam jaringan lokal pribadi dan tidak dapat diakses>
+      - Digunakan pada jaringan rumah ataupun kantor.
+      - Tidak bersifat unik sehingga setiap orang bebas menggunakannya.
+      ```
+      
+      IP Public
+      ```
+      - Alamat IP unik yang diberikan kepada perangkat untuk diidentifikasi di intern>
+      - Dapat berkomunikasi di seluruh jaringan global.
+      - Bersifat unik dan tidak ada yang sama di setiap pengguna jaringan.
+      ```
+      
+      IP Dynamic (DHCP)
+      ```
+      - Alamat IP yang dapat berubah setiap kali perangkat terhubung ke dalam jaringa>
+      - Sebagian besar digunakan dalam skala perumahan.
+      ```
+      
+      IP Static
+      ```
+      - Alamat IP yang tetap (tidak berubah) memiliki alamat yang sama setiap kali te>
+      - Digunakan oleh layanan publik yang memerlukan koneksi stabil dan alamat web y>
+      ```
