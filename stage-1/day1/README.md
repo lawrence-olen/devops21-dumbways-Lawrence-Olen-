@@ -64,3 +64,28 @@ Manfaat DevOps:
    
 
 3. Install nginx WebServer ke dalam VM yang sudah dibuat!
+
+   Langkah pertama dalam menginstall nginx web server pada virtual machine yang sudah kita buat yaitu, kita cek terlebih dahulu apakah virtual machine sudah tersedia atau belum. Jika sudah tersedia maka kita menggunanakan virtual machine tersebut.
+   ![step1](https://github.com/user-attachments/assets/72fbda1a-d926-426f-975d-c685b575d2da)
+
+   Setelah itu kita lihat apakah web server nginx sudah terpasang atau belum, dengan cara ketik ```sudo ufw app list```.
+   ![step2](https://github.com/user-attachments/assets/cb5fc232-a775-455d-adba-202d91b447cf)
+
+   Sebelum memulai installasi nginx web server, akan lebih baik kita melakukan update pada sistem terlebih dahulu.
+   ![step3](https://github.com/user-attachments/assets/67c65140-2f4a-4010-b28c-c5e5ef9b8b46)
+
+   Jika sudah, maka kita bisa melakukan installasi nginx web server dengan mengetikkan ```sudo apt install nginx```. Tunggu installasi hingga selesai.
+   ![step4](https://github.com/user-attachments/assets/33e5a645-3dbc-4730-a690-a1e08d9c37e4)
+
+   Setelah installasi selesai, kita dapat melihat apakah nginx sudah terpasang atau belum dengan cara mengetikkan kembali ```sudo ufw app list```.   
+   ![step5](https://github.com/user-attachments/assets/2ddd35dc-7b2f-4417-8a3d-b1afff3a43a6)
+
+   Lalu kita nyalakan dan jalankan nginx web server kita dengan cara ketikkan
+   ```sudo ufw allow 'Nginx HTTP'``` dan ```sudo systemctl start nginx```.   
+   ![step6](https://github.com/user-attachments/assets/800cf1d7-1352-478f-9f79-cc8cc04d2f4c)
+
+   Langkah terakhir kita bisa cek pada web browser apakah sudah berjalan atau belum dengan memasukkan IP Address dari multipass tersebut.
+
+   ![step7](https://github.com/user-attachments/assets/a769c129-309c-4138-83c1-9505080fde5c)
+
+   
