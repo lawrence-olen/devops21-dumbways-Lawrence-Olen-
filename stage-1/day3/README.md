@@ -185,3 +185,26 @@
 
 
 5. Implementasikan Firewall pada linux server sesuai perintah!
+
+A. Buatlah 2 buah Virtual Machine
+B. Server A yang hanya dapat mengakses WebServer yang ada pada Server B (Study Case)
+C. Carilah cara agar UFW dapat memblokir ataupun mengizinkan spesific protocol jaringan seperti TCP dan UDP.
+D. Jelaskan perbedaan protocol jaringan TCP serta UDP.
+
+TCP (Transmission Control Protocol)
+
+Protokol yang berorientasi koneksi. Sebelum data dikirim, koneksi harus dibuat antara pengirim dan penerima. TCP juga memastikan bahwa data yang dikirim tiba di tujuan dalam urutan yang benar dan tanpa kehilangan paket.
+```
+- Menjamin pengiriman data ke tujuan dengan mekanisme pengiriman ulang paket yang hilang.
+- Kecepatan cenderung lebih lambat karena mekanisme pengiriman ulang dan pengakuan data yang kompleks.
+- Digunakan untuk aplikasi yang membutuhkan pengiriman data yang andal dan terurut, seperti transfer file, email, dll.
+```
+
+UDP
+
+Protokol tanpa koneksi. Data dapat dikirim tanpa perlu membuat koneksi terlebih dahulu. UDP tidak menjamin pengiriman data yang andal atau dalam urutan yang benar.
+```
+- Cocok untuk aplikasi yang membutuhkan pengiriman data yang cepat dan real-time, seperti game online atau streaming video.
+- Kecepatan lebih cepat dikarenakan tidak ada overhead untuk pengiriman ulang.
+- Digunakan untuk aplikasi yang membutuhkan transfer data cepat dan real-time, seperti game online, dll.
+```
