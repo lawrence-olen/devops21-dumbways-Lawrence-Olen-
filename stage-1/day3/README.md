@@ -145,23 +145,25 @@
 
 3. Apa perbedaan Shell Script dan Bash Script?
 
-Shell Script
-Merupakan skrip yang ditulis untuk shell tertentu pada sistem operasi Linux kita.
-Contoh:
-```
-- Memiliki berbagai jenis shell di Linux, seperti Bourne Shell (sh), C Shell (csh), Korn Shell (ksh), dan sebagainya
-- Dapat ditulis untuk shell apapun, bukan hanya untuk Bash saja. 
-```
+      **Shell Script**
 
-Bash Script
-Merupakan jenis shell script yang khusus untuk penggunaan BASH (Bourne Again Shell), yang digunakan secara luas di sistem operasi Linux.
-Contoh:
-```
-- Script hanya akan berjalan di Bash dan memungkinkan tidak berfungsi di shell lain.
-- Script dimulai dengan '#!/bin/bash' adalah Bash Script yang menandakan bahwa script tersebut ditulis untuk dijalankan di Bash.
-```
+   Merupakan skrip yang ditulis untuk shell tertentu pada sistem operasi Linux kita.
+      Contoh:
+      ```
+      - Memiliki berbagai jenis shell di Linux, seperti Bourne Shell (sh), C Shell (csh), Korn Shell (ksh), dan sebagainya
+      - Dapat ditulis untuk shell apapun, bukan hanya untuk Bash saja. 
+      ```
+      
+      **Bash Script**
 
-Semua Bash Script adalah Shell Script, akan tetapi tidak semua Shell Script adalah Bash Script. Shell Script bisa ditulis untuk berbagai shell yang ada, tetapi Bash Script spesifik untuk Bash.
+   Merupakan jenis shell script yang khusus untuk penggunaan BASH (Bourne Again Shell), yang digunakan secara luas di sistem operasi Linux.
+      Contoh:
+      ```
+      - Script hanya akan berjalan di Bash dan memungkinkan tidak berfungsi di shell lain.
+      - Script dimulai dengan '#!/bin/bash' adalah Bash Script yang menandakan bahwa script tersebut ditulis untuk dijalankan di Bash.
+      ```
+      
+      Jadi kesimpulannya adalah semua Bash Script adalah Shell Script, akan tetapi tidak semua Shell Script adalah Bash Script. Shell Script bisa ditulis untuk berbagai shell yang ada, tetapi Bash Script spesifik untuk Bash.
 
 4. Buatlah Bash Script untuk melakukan installasi webserver!
 5. Implementasikan Firewall pada linux server sesuai perintah!
