@@ -82,7 +82,40 @@
    ![help](https://github.com/user-attachments/assets/fd5214a8-4800-4ca4-afa3-7f04400d5ee9)
 
    
-3. Buatlah Dokumentasi tentang Manipulation Text!
-4. Apa perbedaan Shell Script dan Bash Script?
-5. Buatlah Bash Script untuk melakukan installasi webserver!
-6. Implementasikan Firewall pada linux server sesuai perintah!
+2. Buatlah Dokumentasi tentang Manipulation Text!
+
+Teks manipulasi pada Linux merujuk pada berbagai operasi yang dapat dilakukan pada data teks, seperti pencarian, penggantian, penyaringan, pengurutan, dan manipulasi lainnya. Berikut dibawah ini ada beberapa perintah untuk melakukan manipulasi teks di terminal.
+
+ **Dokumentasi Manipulation Text**
+
+ A. 'cat'
+   Digunakan untuk menampilkan, menggabungkan, dan membuat file teks.
+
+ B. 'echo'
+   Digunakan untuk menampilkan teks.
+
+ C. 'grep'
+   Digunakan untuk mencari nama teks atau string dalam file.
+
+ D. 'sed (stream editor)'
+   Digunakan untuk mencari dan mengganti teks, menghapus baris, dan operasi pengeditan lainnya.
+
+ E. 'awk'
+   Digunakan untuk memproses dan memanipulasi data dalam file teks.
+
+ F. 'sort'
+   Digunakan untuk mengurutkan baris dalam file teks.
+
+ G. 'cut'
+   Digunakan untuk memotong bagian tertentu dari setiap baris teks.
+
+ H. 'uniq'
+   Digunakan untuk menghapus duplikasi baris dalam file teks.
+
+ I. 'tr'
+   Digunakan untuk menterjemahkan atau menghapus karakter dari input standar.
+
+
+3. Apa perbedaan Shell Script dan Bash Script?
+4. Buatlah Bash Script untuk melakukan installasi webserver!
+5. Implementasikan Firewall pada linux server sesuai perintah!
