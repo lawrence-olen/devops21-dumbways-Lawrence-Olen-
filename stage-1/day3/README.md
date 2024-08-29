@@ -84,38 +84,65 @@
    
 2. Buatlah Dokumentasi tentang Manipulation Text!
 
-Teks manipulasi pada Linux merujuk pada berbagai operasi yang dapat dilakukan pada data teks, seperti pencarian, penggantian, penyaringan, pengurutan, dan manipulasi lainnya. Berikut dibawah ini ada beberapa perintah untuk melakukan manipulasi teks di terminal.
+      Teks manipulasi pada Linux merujuk pada berbagai operasi yang dapat dilakukan pada data teks, seperti pencarian, penggantian, penyaringan, pengurutan, dan manipulasi lainnya. Berikut dibawah ini ada beberapa perintah untuk melakukan manipulasi teks di terminal.
 
- **Dokumentasi Manipulation Text**
+      **Dokumentasi Manipulation Text**
 
- A. 'cat'
-   Digunakan untuk menampilkan, menggabungkan, dan membuat file teks.
+      A. 'cat'
 
- B. 'echo'
-   Digunakan untuk menampilkan teks.
+     Digunakan untuk menampilkan, menggabungkan, dan membuat file teks.
+   ![cat1](https://github.com/user-attachments/assets/9848eee8-374e-4003-88bf-039aee2682db)
+   ![cat2](https://github.com/user-attachments/assets/caea894d-56e8-4353-82df-e3c3d7a541aa)
+   ![cat3](https://github.com/user-attachments/assets/d8bfd9dc-ccf0-40ac-9fa8-1aed558547b6)
 
- C. 'grep'
-   Digunakan untuk mencari nama teks atau string dalam file.
+      B. 'echo'
 
- D. 'sed (stream editor)'
-   Digunakan untuk mencari dan mengganti teks, menghapus baris, dan operasi pengeditan lainnya.
+     Digunakan untuk menampilkan teks.
+   ![echo](https://github.com/user-attachments/assets/9b9be6eb-686f-436c-8ed9-fe2b8b0713cb)
 
- E. 'awk'
-   Digunakan untuk memproses dan memanipulasi data dalam file teks.
 
- F. 'sort'
-   Digunakan untuk mengurutkan baris dalam file teks.
+      C. 'grep'
 
- G. 'cut'
-   Digunakan untuk memotong bagian tertentu dari setiap baris teks.
+     Digunakan untuk mencari nama teks atau string dalam file.
+   ![grep](https://github.com/user-attachments/assets/d1b5e191-18e9-4f02-9301-9fdc4390cf16)
 
- H. 'uniq'
-   Digunakan untuk menghapus duplikasi baris dalam file teks.
 
- I. 'tr'
-   Digunakan untuk menterjemahkan atau menghapus karakter dari input standar.
+      D. 'sed (stream editor)'
+
+     Digunakan untuk mencari dan mengganti teks, menghapus baris, dan operasi pengeditan lainnya.
+   ![sed](https://github.com/user-attachments/assets/74240223-eb4d-4d7e-bd93-bbd1d7c70ffe)
+
+
+      E. 'awk'
+
+     Digunakan untuk memproses dan memanipulasi data dalam file teks.
+   ![awk](https://github.com/user-attachments/assets/0fea1143-26ba-48b7-860e-9b8e73235314)
+
+
+      F. 'sort'
+
+     Digunakan untuk mengurutkan baris dalam file teks.
+   ![sort](https://github.com/user-attachments/assets/052d38e1-4ea6-4aca-9bc5-a11b13014ef3)
+
+
+      G. 'cut'
+
+     Digunakan untuk memotong bagian tertentu dari setiap baris teks.
+   ![cut](https://github.com/user-attachments/assets/d3e12307-61cd-4db8-a6b0-57c9d2af8af3)
+
+
+      H. 'uniq'
+
+     Digunakan untuk menghapus duplikasi baris dalam file teks.
+   ![unique](https://github.com/user-attachments/assets/a63b0dcf-7f47-431b-9dd3-1d044a3e3993)
+
+
+      I. 'tr'
+
+     Digunakan untuk menterjemahkan atau menghapus karakter dari input standar.
+   ![tr](https://github.com/user-attachments/assets/f4c241c1-8173-40ed-bb77-93cffa3937bc)
 
 
 3. Apa perbedaan Shell Script dan Bash Script?
 4. Buatlah Bash Script untuk melakukan installasi webserver!
-5. Implementasikan Firewall pada linux server sesuai perintah!
+6. Implementasikan Firewall pada linux server sesuai perintah!
