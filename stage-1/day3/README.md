@@ -165,13 +165,23 @@
       
       Jadi kesimpulannya adalah semua Bash Script adalah Shell Script, akan tetapi tidak semua Shell Script adalah Bash Script. Shell Script bisa ditulis untuk berbagai shell yang ada, tetapi Bash Script spesifik untuk Bash.
 
+
 4. Buatlah Bash Script untuk melakukan installasi webserver!
 
-Langkah pertama kita harus membuat file sheel/bash script baru terlebih dahulu.
-Selanjutnya kita jalankan file tersebut. Akan tetapi apabila tidak dapat dijalankan, itu dikarenakan permission untuk eksekusi file belum diubah.
-Maka dari itu kita ubah terlebih dahulu file permission yang ingin dieksekusi. Jika sudah jalankan kembali file tersebut.
-Lalu kita membuat Bash Script untuk melakukan instalasi webserver dengan study case yang sudah diberikan.
-Terakhir, kita jalankan Base Script yang sudah dibuat dan dapat memilih pilihan yang sudah dibuat.
+      Langkah pertama kita harus membuat file shlel/bash script baru terlebih dahulu.
+   ![step1](https://github.com/user-attachments/assets/55567dc4-b060-4159-9f3c-46a67d22e125)
+
+      Selanjutnya kita jalankan file tersebut. Akan tetapi apabila tidak dapat dijalankan, itu dikarenakan permission untuk eksekusi file belum diubah.
+   ![step2](https://github.com/user-attachments/assets/90982c03-33be-48c8-b660-ddbd7c3414cd)
+   
+      Maka dari itu kita ubah terlebih dahulu file permission yang ingin dieksekusi. Jika sudah jalankan kembali file tersebut.
+   ![step3](https://github.com/user-attachments/assets/b6f768f6-f753-4f5e-8bbf-89e2f48e73e9)
+   
+      Lalu kita membuat Bash Script untuk melakukan instalasi webserver dengan study case yang sudah diberikan.
+   ![step4](https://github.com/user-attachments/assets/58cf60f5-f411-4135-a20a-17594a78845d)
+
+      Terakhir, kita jalankan Base Script yang sudah dibuat dan dapat memilih pilihan yang sudah dibuat.
+   ![step5](https://github.com/user-attachments/assets/6eca2ef5-b49b-4bfb-b649-c077d9d46518)
 
 
 5. Implementasikan Firewall pada linux server sesuai perintah!
