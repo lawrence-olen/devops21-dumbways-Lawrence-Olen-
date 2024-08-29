@@ -166,4 +166,12 @@
       Jadi kesimpulannya adalah semua Bash Script adalah Shell Script, akan tetapi tidak semua Shell Script adalah Bash Script. Shell Script bisa ditulis untuk berbagai shell yang ada, tetapi Bash Script spesifik untuk Bash.
 
 4. Buatlah Bash Script untuk melakukan installasi webserver!
+
+Langkah pertama kita harus membuat file sheel/bash script baru terlebih dahulu.
+Selanjutnya kita jalankan file tersebut. Akan tetapi apabila tidak dapat dijalankan, itu dikarenakan permission untuk eksekusi file belum diubah.
+Maka dari itu kita ubah terlebih dahulu file permission yang ingin dieksekusi. Jika sudah jalankan kembali file tersebut.
+Lalu kita membuat Bash Script untuk melakukan instalasi webserver dengan study case yang sudah diberikan.
+Terakhir, kita jalankan Base Script yang sudah dibuat dan dapat memilih pilihan yang sudah dibuat.
+
+
 5. Implementasikan Firewall pada linux server sesuai perintah!
