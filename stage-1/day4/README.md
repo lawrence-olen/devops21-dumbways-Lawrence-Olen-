@@ -61,45 +61,81 @@
 
 3. Buatlah Dokumentasi tentang command yang ada di Git!
 
-Command Git merupakan suatu instruksi yang digunakan untuk berinteraksi dengan sistem kontrol versi Git melalui command line.
+    Command Git merupakan suatu instruksi yang digunakan untuk berinteraksi dengan sistem kontrol versi Git melalui command line.
+    
+    **Perintah/Command Git**
 
-Perintah/Command Git
-A. 'git init'
-Digunakan untuk menginisialisasi suatu repositori Git yang baru di direktori lokal.
+    A. 'git init'
 
-B. 'git clone'
-Digunakan untuk kloning(menyalin) repositori dari github ke dalam komputer lokal.
+    Digunakan untuk menginisialisasi suatu repositori Git yang baru di direktori lokal.
+   ![git init](https://github.com/user-attachments/assets/d3883063-6c51-4d21-a362-d6e64c18d353)
 
-C. 'git add'
-Digunakan untuk menambahkan/memindahkan file dari unstage area ke stage area.
+    
+    B. 'git clone'
 
-D. 'git commit'
-Digunakan untuk menyimpan segala perubahan file di dalam lokal dan biasanya disertakan dengan pesan deskriptif.
+    Digunakan untuk kloning(menyalin) repositori dari github ke dalam komputer lokal.
+   ![git clone](https://github.com/user-attachments/assets/52439411-49e6-45ea-836e-0e1cf3f0e669)
 
-E. 'git remote'
-Digunakan untuk menghubungkan repositori lokal dengan repositori Git yang baru saja dibuat.
+    
+    C. 'git add'
 
-F. 'git status'
-Digunakan untuk menampilkan status dari repositori lokal kita, apakah ada perubahan yang masih belum tersimpan maupun sudah tersimpan.
+    Digunakan untuk menambahkan/memindahkan file dari unstage area ke stage area.
+   ![git add](https://github.com/user-attachments/assets/0e665d2f-4ede-4e34-bd19-76d5fcb4707a)
 
-G. 'git log'
-Digunakan untuk menampilkan riwayat commit dari repositori kita.
+    
+    D. 'git commit'
 
-H. 'git push'
-Digunakan untuk mengirim commit dari repositori lokal ke repositori Git.
+    Digunakan untuk menyimpan segala perubahan file di dalam lokal dan biasanya disertakan dengan pesan deskriptif.
+   ![git commit](https://github.com/user-attachments/assets/5c37cef8-df33-413a-928e-94a2683e82df)
 
-I. 'git pull'
-Digunakan untuk mengambil perubahan terbaru dari repositori Git  ke repositori lokal kita.
+    
+    E. 'git remote'
 
-J. 'git branch'
-Digunakan untuk mengelola branch dalam repositori Git.
-
-K. 'git checkout'
-Digunakan untuk berpindah dari satu branch ke branch yang lain.
-
-J. 'git merge'
-Digunakan untuk menggabungkan perubahan antara satu branch dengan branch lain.
+    Digunakan untuk menghubungkan repositori lokal dengan repositori Git yang baru saja dibuat.
+   ![git remote](https://github.com/user-attachments/assets/47c3d927-3077-412f-8571-b4ae17fb5e3a)
 
 
+    F. 'git status'
 
-4. Study Case!
+    Digunakan untuk menampilkan status dari repositori lokal kita, apakah ada perubahan yang masih belum tersimpan maupun sudah tersimpan.
+   ![git status](https://github.com/user-attachments/assets/8a5487af-340c-4cdf-b7c2-2851a50e5e87)
+
+    
+    G. 'git log'
+
+    Digunakan untuk menampilkan riwayat commit dari repositori kita.
+   ![git log](https://github.com/user-attachments/assets/9e81d5b1-71c9-4d94-8923-7609ebdc5929)
+
+    
+    H. 'git push'
+
+    Digunakan untuk mengirim commit dari repositori lokal ke repositori Git.
+   ![git push](https://github.com/user-attachments/assets/ce63f95e-b001-445e-8907-9d4f798c817d)
+
+    
+    I. 'git pull'
+
+    Digunakan untuk mengambil perubahan terbaru dari repositori Git  ke repositori lokal kita.
+   ![git pull](https://github.com/user-attachments/assets/a7f42d71-4960-4711-8333-d9ef1c016617)
+
+
+    J. 'git branch'
+
+    Digunakan untuk mengelola branch dalam repositori Git.
+   ![git branch](https://github.com/user-attachments/assets/004924b7-a69d-462f-acf6-6d81e9b222ec)
+
+    
+    K. 'git checkout'
+
+    Digunakan untuk berpindah dari satu branch ke branch yang lain.
+   ![git checkout](https://github.com/user-attachments/assets/ed68dd6b-53b0-4aa7-b889-c7ce3239b435)
+
+    
+    L. 'git merge'
+
+    Digunakan untuk menggabungkan perubahan antara satu branch dengan branch lain.
+   ![git merge](https://github.com/user-attachments/assets/d7b68a77-9d73-4ddb-a9a1-f0112507fdf0)
+
+
+
+5. Study Case!
