@@ -139,3 +139,21 @@
 
 
 5. Study Case!
+
+Case 1: Reyhan membuat perubahan pada file index.html dan commit file tersebut menggunakan sintaks 'git commit -m "fix: Typo on Description".'
+
+Case 2: Teguh kebetulan juga melakukan perubahan pada index.html dan commit file menggunakan sintaks 'git commit -m "feat: Header Adjustment".'
+
+Case 3: Reyhan ternyata melakukan push ke repository terlebih dahulu.
+
+Case 4: Teguh belum melakukan push, dan mencoba untuk melakukan push. Akan tetapi, karena ada perubahan baru di remote maka Git menolak push teguh dan memberi tahu bahwa ada konflik.
+
+Case 5: Teguh mencoba untuk melakukan pull repository tetapi fatal error.
+
+Case 6: Teguh mencoba untuk melakukan merge otomatis pada repository dengan mengetikkan sintaks 'git config pull.rebase false' lalu melakukan pull kembali. Tetapi konflik tersebut harus diperbaiki secara manual, sehinggan Teguh harus membuka file yang konflik.
+
+Case 7: Hapuslah tanda-tanda konflik, lalu simpan perubahan yang ada.
+
+Case 8: Jika sudah, maka lakukan staging, commit dan push kembali repository tersebut.
+
+Case 9: Hasilnya akan terlihat pada repository Git, kedua teks yang dibuat oleh Reyhan dan Teguh sudah menjadi 1 bagian.
