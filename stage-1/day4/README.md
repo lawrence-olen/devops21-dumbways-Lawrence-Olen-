@@ -140,20 +140,32 @@
 
 5. Study Case!
 
-Case 1: Reyhan membuat perubahan pada file index.html dan commit file tersebut menggunakan sintaks 'git commit -m "fix: Typo on Description".'
+    Case 1: Reyhan membuat perubahan pada file index.html dan commit file tersebut menggunakan sintaks 'git commit -m "fix: Typo on Description".'
+   ![step1](https://github.com/user-attachments/assets/672e5db1-323a-4aa7-8313-9987de5532f8)
+   ![step2](https://github.com/user-attachments/assets/b7559c2f-96fe-423b-b2af-22525369506b)
 
-Case 2: Teguh kebetulan juga melakukan perubahan pada index.html dan commit file menggunakan sintaks 'git commit -m "feat: Header Adjustment".'
+    Case 2: Teguh kebetulan juga melakukan perubahan pada index.html dan commit file menggunakan sintaks 'git commit -m "feat: Header Adjustment".'
+   ![step3](https://github.com/user-attachments/assets/2b980719-93c0-44f1-89d4-e748386dbcf5)
+   ![step4](https://github.com/user-attachments/assets/91c3ae23-84d9-42d2-99fb-aacae7faf497)
 
-Case 3: Reyhan ternyata melakukan push ke repository terlebih dahulu.
+    Case 3: Reyhan ternyata melakukan push ke repository terlebih dahulu.
+   ![step5](https://github.com/user-attachments/assets/7d64c525-3948-44fc-a454-557d845dddf1)
 
-Case 4: Teguh belum melakukan push, dan mencoba untuk melakukan push. Akan tetapi, karena ada perubahan baru di remote maka Git menolak push teguh dan memberi tahu bahwa ada konflik.
+    Case 4: Teguh belum melakukan push, dan mencoba untuk melakukan push. Akan tetapi, karena ada perubahan baru di remote maka Git menolak push teguh dan memberi tahu bahwa ada konflik.
+   ![step6](https://github.com/user-attachments/assets/da8d6068-f65b-4b76-8288-9683f2eaf734)
 
-Case 5: Teguh mencoba untuk melakukan pull repository tetapi fatal error.
+    Case 5: Teguh mencoba untuk melakukan pull repository tetapi fatal error.
+   ![step7](https://github.com/user-attachments/assets/8b66d3b6-abb6-42ad-8312-7265ab278644)
 
-Case 6: Teguh mencoba untuk melakukan merge otomatis pada repository dengan mengetikkan sintaks 'git config pull.rebase false' lalu melakukan pull kembali. Tetapi konflik tersebut harus diperbaiki secara manual, sehinggan Teguh harus membuka file yang konflik.
+    Case 6: Teguh mencoba untuk melakukan merge otomatis pada repository dengan mengetikkan sintaks 'git config pull.rebase false' lalu melakukan pull kembali. Tetapi konflik tersebut harus diperbaiki secara manual, sehinggan Teguh harus membuka file yang konflik.
+   ![step8](https://github.com/user-attachments/assets/162f7096-c438-4ffe-ad3f-c613651b44ec)
 
-Case 7: Hapuslah tanda-tanda konflik, lalu simpan perubahan yang ada.
+    Case 7: Hapuslah tanda-tanda konflik, lalu simpan perubahan yang ada.
+   ![step9](https://github.com/user-attachments/assets/db4ccd79-4c14-4c4c-942f-82ef23ab5ab5)
 
-Case 8: Jika sudah, maka lakukan staging, commit dan push kembali repository tersebut.
+    Case 8: Jika sudah, maka lakukan staging, commit dan push kembali repository tersebut.
+   ![step10](https://github.com/user-attachments/assets/4cd02505-0b54-4782-bb94-e799edb3d7d1)
 
-Case 9: Hasilnya akan terlihat pada repository Git, kedua teks yang dibuat oleh Reyhan dan Teguh sudah menjadi 1 bagian.
+    Case 9: Hasilnya akan terlihat pada repository Git, kedua teks yang dibuat oleh Reyhan dan Teguh sudah menjadi 1 bagian.
+   ![step11](https://github.com/user-attachments/assets/9feea17f-8c83-479d-9118-f2f8e8402c9c)
+
