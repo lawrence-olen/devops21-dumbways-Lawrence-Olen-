@@ -187,7 +187,10 @@
 5. Implementasikan Firewall pada linux server sesuai perintah!
 
       A. Buatlah 2 buah Virtual Machine
-      
+   
+      Berikut adalah 2 buah Virtual Machine yang sudah dibuat yaitu, VM dengan nama ServerA dan ServerB.
+   ![step1](https://github.com/user-attachments/assets/c097580b-0e75-49bd-8d7c-b226cd958b4e)
+
       B. Server A yang hanya dapat mengakses WebServer yang ada pada Server B (Study Case)
       
       C. Carilah cara agar UFW dapat memblokir ataupun mengizinkan spesific protocol jaringan seperti TCP dan UDP.
