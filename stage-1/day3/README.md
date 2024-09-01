@@ -211,7 +211,13 @@
 
 
       C. Carilah cara agar UFW dapat memblokir ataupun mengizinkan spesific protocol jaringan seperti TCP dan UDP.
+
+	Cara untuk mengizinkan koneksi TCP ke port 80 dari spesifik IP seperti berikut:
+	
+	Cara untuk memblokir koneksi UDP ke port 22 dari spesifik IP seperti berikut:
       
+	Lalu cek status firewall dan memsatikan bahwa cara tersebut sudah diterapkan dengan cara ketikkan perintah ``` sudo ufw status verbose ```.
+
       D. Jelaskan perbedaan protocol jaringan TCP serta UDP.
       
       **TCP (Transmission Control Protocol)**
