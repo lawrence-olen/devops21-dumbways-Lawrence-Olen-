@@ -192,12 +192,22 @@
    ![step1](https://github.com/user-attachments/assets/c097580b-0e75-49bd-8d7c-b226cd958b4e)
 
       B. Server A yang hanya dapat mengakses WebServer yang ada pada Server B (Study Case)
-      
+
 	Langkah pertama yaitu mengaktifkan aturan firewall pada sistem ubuntu kita terlebih dahulu dan cek apakah webserver yang ingin digunakan sudah terinstal atau belum, jika belum bisa diinstall terlebih dahulu dengan menggunakan script yang sudah dibuat sebelumnya.
-	Langkah kedua, kita melihat apakah web server sudah tersedia atau belum dengan ketikkan ``` sudo ufw app list```
+	![step2](https://github.com/user-attachments/assets/4059afdc-dd51-4224-8da6-a4e55be98032)
+
+	Langkah kedua, kita melihat apakah web server sudah tersedia atau belum dengan ketikkan ``` sudo ufw app list```.
+	![step3](https://github.com/user-attachments/assets/d85ce7a8-2746-431a-a8c2-fb4cf5975cb7)
+
 	Langkah ketiga, kita harus melihat terlebih dahulu ip dari serverA yang akan diakses nanti.
+	![step4](https://github.com/user-attachments/assets/099b5be6-4674-450c-846a-3014bd90f3de)
+
 	Langkah keempat, kita dapat mengizinkan koneksi dari serverA ke web server yang ada pada ServerB.
+	![step5](https://github.com/user-attachments/assets/55bc06d3-edfd-4d6c-90ff-deb0959e3eb5)
+
 	Terakhir, kita dapat melihat bahwa hanya serverA saja yang dapat mengakses web server milik serverB. Untuk server lokal sendiri tidak dapat mengaksesnya.
+	![step6](https://github.com/user-attachments/assets/31ed9ad6-9a70-49a2-9c4b-926c3fdf8214)
+	![step 7](https://github.com/user-attachments/assets/4dbd8f42-7efb-4840-bf8f-0323e8bf1923)
 
 
       C. Carilah cara agar UFW dapat memblokir ataupun mengizinkan spesific protocol jaringan seperti TCP dan UDP.
