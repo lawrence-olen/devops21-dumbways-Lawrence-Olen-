@@ -83,5 +83,24 @@
 
 
 3. Deploy Golang & Python dengan menampilkan nama masing-masing.
+
+A. Golang
+Sebelum melakukan installasi go pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
+Setelah itu lakukan installasi dengan mengikuti langkah-langkah pada website resmi golang yaitu ``` https://go.dev/doc/install ``` atau kita juga dapat menggunakan snap install yang dapat dilihat pada website ``` https://snapcraft.io/go ```.
+Jika sudah, maka lakukanlah instalasi pada lokal sistem kita dan lihat apakah sudah terinstall atau belum dengan menggunakan perintah ``` go version ```.
+Lalu buatlah folder baru dan file dengan ekstensi '.go' untuk memasukkan kode yang nantinya akan dijalankan.
+Setelah itu masukkan script yang ada dan jalankan aplikasi go dengan menggunakan perintah ``` go run index.go ```.
+Atau jika kita ingin build aplikasi, maka jalankan dengan menggunakan perintah ``` go build index.go ``` dan jalankan aplikasi kembali dengan perintah ``` ./index ```.
+
+Sebenarnya cara untuk menjalankan file go sudah selesai. Akan tetapi, jika kita ingin mencoba untuk menampilkannya pada web browser kita diharuskan untuk menjalankan perintah ``` go mod init hello ``` yang berfungsi untuk inisialisasi dependensi yang akan digunakan pada file go kita.
+Buatlah file go baru untuk memasukkan script yang nantinya akan dijalankan.
+Jika sudah kita bisa menjalankannya dengan perintah yang sudah kita ketahui ataupun ingin build aplikasi kita.
+
+
+
+
+
+B. Python
+
 4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
