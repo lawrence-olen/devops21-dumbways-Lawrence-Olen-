@@ -117,20 +117,36 @@
    ![go11](https://github.com/user-attachments/assets/3c8c893b-b27a-4929-9bb8-cd49f793732f)
 
     Tampilan pada localhost web browser kita.
+   
    ![go12](https://github.com/user-attachments/assets/a8e73037-6ea7-4eee-89a4-595d1c8bd212)
    
     
     **B. Python**
 
-Sebelum melakukan installasi python pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
-Tetapi python sendiri sudah ada secara default pada sistem linux kita, untuk mengeceknya jalankan perintah ``` python3 -V ```.
-Sekarang kita install package manager dari python3 dengan menjalankan perintah ``` sudo apt install python3-pip ``` dan ``` pip install flask ```.
-Tetapi ada kemungkinan kita mendapatkan suatu error seperti berikut.
+    Sebelum melakukan installasi python pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
+   ![py1](https://github.com/user-attachments/assets/3ec8c74f-ec93-4200-ace5-dd6b38c2d11a)
 
-Cara untuk menyelesaikannya seperti dibawah ini.
-Jika sudah kita dapat lanjut untuk membuat script python dalam file baru dan menjalankannya dengan perintah ``` python3 index.py ```.
-Lalu kita coba akses web browser untuk melihat hasilnya dengan localhost.
+    Tetapi python sendiri sudah ada secara default pada sistem linux kita, untuk mengeceknya jalankan perintah ``` python3 -V ```.
+   ![py2](https://github.com/user-attachments/assets/e04f30c3-1e3c-4441-94ec-684754f1ef10)
+
+    Sekarang kita install package manager dari python3 dengan menjalankan perintah ``` sudo apt install python3-pip ``` dan ``` pip install flask ```.
+   ![py3](https://github.com/user-attachments/assets/a816c37c-b21e-41b0-af54-98728ae9c8d5)
+
+    Tetapi ada kemungkinan kita mendapatkan suatu error seperti berikut.
+   ![pyerror](https://github.com/user-attachments/assets/986baf38-5452-42ee-af8b-eef8fc2deb81)
+
+    Cara untuk menyelesaikannya seperti dibawah ini.
+   ![py4](https://github.com/user-attachments/assets/3dda30d6-d7e5-48f2-853f-bfa7cce8b43d)
+
+    Jika sudah kita dapat lanjut untuk membuat script python dalam file baru dan menjalankannya dengan perintah ``` python3 index.py ```.
+   ![py5](https://github.com/user-attachments/assets/6685143b-8d0a-4383-a67d-23c309db3b9e)
+   ![py6](https://github.com/user-attachments/assets/100735f3-592a-4476-995b-37caebcf24b4)
+
+    Lalu kita coba akses web browser untuk melihat hasilnya dengan localhost.
+   
+   ![py7](https://github.com/user-attachments/assets/8b6f9802-a9c8-4176-8b5a-ae9d01de3563)
 
 
-4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
+
+5. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
