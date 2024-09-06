@@ -148,5 +148,24 @@
 
 
 
-5. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
+4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
+PM2 merupakan proses manajer untuk menjalankan aplikasi Node.js, dsb dalam mode produksi dan memungkinkan untuk mengelola proses secara efisien.
+
+Pertama-tama kita diharuskan untuk menginstall package pm2 terlebih dahulu dengan perintah ``` npm install pm2 -g ``` dan tunggu installasi hingga selesai.
+Jika kita ingin melakukan manajemen aplikasi menggunakan pm2, kita dapat melihatnya dengan menggunakan perintah ``` pm2 list ```.
+Lalu kita coba package pm2 dengan menggunakan proyek dumbflix-frontend yang sudah ada dengan menjalankan perintah ``` pm2 start npm -- start ```.
+Apabila kita ingin menambahkan script pada package.json pun bisa dengan cara seperti berikut dan jalankan dengan perintah ``` npm run serve ```.
+Terakhir, kita dapat mengakses localhost kita.
+
+Begitu pula untuk menjalankan file script golang maupun python.
+A. Golang
+
+Untuk menjalankan file golang menggunakan package pm2, kita diharuskan untuk build terlebih dahulu file golang kita. Lalu jalankan dengan perintah ``` np2 start ./index.go ```.
+Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
+
+
+B. Python
+
+Untuk menjalankan file python di lingkungan virtual menggunakan package pm2, kita diharuskan untuk menggunakan interpreter python yang ada pada lingkungan virtual kita seperti berikut.
+Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
