@@ -82,25 +82,45 @@
    ![step10](https://github.com/user-attachments/assets/4c58cb75-f40e-481f-86d0-ee2f849fea56)
 
 
+
 3. Deploy Golang & Python dengan menampilkan nama masing-masing.
 
-A. Golang
-Sebelum melakukan installasi go pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
-Setelah itu lakukan installasi dengan mengikuti langkah-langkah pada website resmi golang yaitu ``` https://go.dev/doc/install ``` atau kita juga dapat menggunakan snap install yang dapat dilihat pada website ``` https://snapcraft.io/go ```.
-Jika sudah, maka lakukanlah instalasi pada lokal sistem kita dan lihat apakah sudah terinstall atau belum dengan menggunakan perintah ``` go version ```.
-Lalu buatlah folder baru dan file dengan ekstensi '.go' untuk memasukkan kode yang nantinya akan dijalankan.
-Setelah itu masukkan script yang ada dan jalankan aplikasi go dengan menggunakan perintah ``` go run index.go ```.
-Atau jika kita ingin build aplikasi, maka jalankan dengan menggunakan perintah ``` go build index.go ``` dan jalankan aplikasi kembali dengan perintah ``` ./index ```.
+    **A. Golang**
+   
+    Sebelum melakukan installasi go pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
+   ![go1](https://github.com/user-attachments/assets/d19686f6-d246-452c-b035-87582505222a)
+   
+    Setelah itu lakukan installasi dengan mengikuti langkah-langkah pada website resmi golang yaitu ``` https://go.dev/doc/install ``` atau kita juga dapat menggunakan snap install yang dapat dilihat pada website ``` https://snapcraft.io/go ```.
+   ![go2](https://github.com/user-attachments/assets/c4230fe3-872e-4335-b527-8bfb1f27cb2c)
+   ![go3](https://github.com/user-attachments/assets/d4f259ca-bbeb-4840-ade2-03a5d6a4ba7e)
 
-Sebenarnya cara untuk menjalankan file go sudah selesai. Akan tetapi, jika kita ingin mencoba untuk menampilkannya pada web browser kita diharuskan untuk menjalankan perintah ``` go mod init hello ``` yang berfungsi untuk inisialisasi dependensi yang akan digunakan pada file go kita.
-Buatlah file go baru untuk memasukkan script yang nantinya akan dijalankan.
-Jika sudah kita bisa menjalankannya dengan perintah yang sudah kita ketahui ataupun ingin build aplikasi kita.
+    Jika sudah, maka lakukanlah instalasi pada lokal sistem kita dan lihat apakah sudah terinstall atau belum dengan menggunakan perintah ``` go version ```.
+   ![go4](https://github.com/user-attachments/assets/94045c9e-f38d-4d17-9cb1-17cc6ea28a64)
 
+    Lalu buatlah folder baru dan file dengan ekstensi '.go' untuk memasukkan kode yang nantinya akan dijalankan.
+   ![go5](https://github.com/user-attachments/assets/3470e808-80a7-4bda-ac08-a53c5584bf13)
 
+    Setelah itu masukkan script yang ada dan jalankan aplikasi go dengan menggunakan perintah ``` go run index.go ```.
+   ![go6](https://github.com/user-attachments/assets/d07f3163-791c-4e84-96aa-cc638f51b74f)
+   ![go7](https://github.com/user-attachments/assets/f7d4bb34-bfae-44e3-8edc-fdb214a36513)
 
+    Atau jika kita ingin build aplikasi, maka jalankan dengan menggunakan perintah ``` go build index.go ``` dan jalankan aplikasi kembali dengan perintah ``` ./index ```.
+   ![go8](https://github.com/user-attachments/assets/26689387-c333-4ad7-aa50-84b1d8a67116)
 
+    Sebenarnya cara untuk menjalankan file go sudah selesai. Akan tetapi, jika kita ingin mencoba untuk menampilkannya pada web browser kita diharuskan untuk menjalankan perintah ``` go mod init hello ``` yang berfungsi untuk inisialisasi dependensi yang akan digunakan pada file go kita.
+   ![go9](https://github.com/user-attachments/assets/7352e6f3-5364-43da-9152-7322e925ef4a)
 
-B. Python
+    Buatlah file go baru untuk memasukkan script yang nantinya akan dijalankan.
+   ![go10](https://github.com/user-attachments/assets/6a73da4b-c0d9-45ef-94da-ec4f41c9ad50)
 
-4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
+    Jika sudah kita bisa menjalankannya dengan perintah yang sudah kita ketahui ataupun ingin build aplikasi kita.
+   ![go11](https://github.com/user-attachments/assets/3c8c893b-b27a-4929-9bb8-cd49f793732f)
+
+    Tampilan pada localhost web browser kita.
+   ![go12](https://github.com/user-attachments/assets/a8e73037-6ea7-4eee-89a4-595d1c8bd212)
+   
+    
+    **B. Python**
+
+5. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
