@@ -150,22 +150,44 @@
 
 4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
-PM2 merupakan proses manajer untuk menjalankan aplikasi Node.js, dsb dalam mode produksi dan memungkinkan untuk mengelola proses secara efisien.
+    PM2 merupakan proses manajer untuk menjalankan aplikasi Node.js, dsb dalam mode produksi dan memungkinkan untuk mengelola proses secara efisien.
+    
+    Pertama-tama kita diharuskan untuk menginstall package pm2 terlebih dahulu dengan perintah ``` npm install pm2 -g ``` dan tunggu installasi hingga selesai.
+   ![pm1](https://github.com/user-attachments/assets/3f79c6a5-f5e9-4533-9690-e8f757322f5c)
 
-Pertama-tama kita diharuskan untuk menginstall package pm2 terlebih dahulu dengan perintah ``` npm install pm2 -g ``` dan tunggu installasi hingga selesai.
-Jika kita ingin melakukan manajemen aplikasi menggunakan pm2, kita dapat melihatnya dengan menggunakan perintah ``` pm2 list ```.
-Lalu kita coba package pm2 dengan menggunakan proyek dumbflix-frontend yang sudah ada dengan menjalankan perintah ``` pm2 start npm -- start ```.
-Apabila kita ingin menambahkan script pada package.json pun bisa dengan cara seperti berikut dan jalankan dengan perintah ``` npm run serve ```.
-Terakhir, kita dapat mengakses localhost kita.
+    Jika kita ingin melakukan manajemen aplikasi menggunakan pm2, kita dapat melihatnya dengan menggunakan perintah ``` pm2 list ```. Disini terlihat masih kosong karena belum ada aplikasi yang dijalankan.
+   ![pm2](https://github.com/user-attachments/assets/cf458d07-39b0-4626-b0ab-7697038ba5a1)
 
-Begitu pula untuk menjalankan file script golang maupun python.
-A. Golang
+    Lalu kita coba package pm2 dengan menggunakan proyek dumbflix-frontend yang sudah ada dengan menjalankan perintah ``` pm2 start npm -- start ```.
+   ![pm3](https://github.com/user-attachments/assets/cfa0fff2-217e-4eef-9be6-17a4dcc5fa97)
 
-Untuk menjalankan file golang menggunakan package pm2, kita diharuskan untuk build terlebih dahulu file golang kita. Lalu jalankan dengan perintah ``` np2 start ./index.go ```.
-Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
+    Apabila kita ingin menambahkan script pada package.json pun bisa dengan cara seperti berikut dan jalankan dengan perintah ``` npm run serve ```.
+
+   ![pm4](https://github.com/user-attachments/assets/2dcce3df-6148-465e-b218-b973c6b367ee)
+
+    Terakhir, kita dapat mengakses localhost kita.
+   ![pm5](https://github.com/user-attachments/assets/c16af72a-0daa-4219-aebf-82a9e3506310)
 
 
-B. Python
+    
+    Begitu pula untuk menjalankan file script golang maupun python.
+   
+    **A. Golang**
+    
+    Untuk menjalankan file golang menggunakan package pm2, kita diharuskan untuk build terlebih dahulu file golang kita. Lalu jalankan dengan perintah ``` np2 start ./index.go ```. Disini kita sudah dapat melihat ada aplikasi yang sudah berjalan pada package pm2.
+   ![pm6](https://github.com/user-attachments/assets/258dcac0-b186-4f3e-8cc0-adc3d220f0b6)
 
-Untuk menjalankan file python di lingkungan virtual menggunakan package pm2, kita diharuskan untuk menggunakan interpreter python yang ada pada lingkungan virtual kita seperti berikut.
-Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
+    Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
+   
+    ![pm7](https://github.com/user-attachments/assets/71e86af1-7000-4f6d-b908-5f9aac93ac8f)
+
+    
+    **B. Python**
+    
+    Untuk menjalankan file python di lingkungan virtual menggunakan package pm2, kita diharuskan untuk menggunakan interpreter python yang ada pada lingkungan virtual kita seperti berikut.
+   ![pm8](https://github.com/user-attachments/assets/8e5923d9-25b4-4088-9737-4106ec68b977)
+
+    Setelah itu cek pada web browser apakah proyek tersebut sudah jalan atau belum.
+   
+   ![pm9](https://github.com/user-attachments/assets/e12c22f0-cc39-4a1a-ac6c-4c04e8eca249)
+
