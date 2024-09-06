@@ -122,5 +122,15 @@
     
     **B. Python**
 
-5. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
+Sebelum melakukan installasi python pada linux, kita diharuskan untuk update lokal sistem kita terlebih dahulu.
+Tetapi python sendiri sudah ada secara default pada sistem linux kita, untuk mengeceknya jalankan perintah ``` python3 -V ```.
+Sekarang kita install package manager dari python3 dengan menjalankan perintah ``` sudo apt install python3-pip ``` dan ``` pip install flask ```.
+Tetapi ada kemungkinan kita mendapatkan suatu error seperti berikut.
+
+Cara untuk menyelesaikannya seperti dibawah ini.
+Jika sudah kita dapat lanjut untuk membuat script python dalam file baru dan menjalankannya dengan perintah ``` python3 index.py ```.
+Lalu kita coba akses web browser untuk melihat hasilnya dengan localhost.
+
+
+4. Implementasikan penggunaan PM2 agar aplikasi kalian dapat berjalan di background.
 
