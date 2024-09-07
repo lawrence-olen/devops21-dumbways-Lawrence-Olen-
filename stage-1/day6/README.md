@@ -31,5 +31,27 @@
 
 
 2. Buatlah Reverse Proxy untuk aplikasi yang sudah di deploy (dumbflix-frontend) dan implemetasikan penggunaan pm2 di aplikasi tersebut. Nama domain sesuaikan nama masing-masing.
+
+
 3. Jelaskan apa itu load balance.
+
+Load Balance (Balancing) merupakan suatu proses pendistribusian lalu lintas jaringan secara efisien ke dalam sekelompok server.
+Tujuan dari load balancing sendiri yaitu untuk meningkatkan ketersediaan, performa, dan keandalan aplikasi atau layanan yang dijalankan oleh server.
+
+Fungsi Load Balancing:
+```
+- Menghindari beban berlebih pada satu server dengan mendistribusikan permintaan ke beberapa server yang ada.
+- Menyeimbangkan lalu lintas jaringan agar server dapat bekerja secara efisien dan meningkatkan kecepatan respons kepada pengguna.
+- Memungkinkan aplikasi/layanan ditingkatkan dengan menambahkan lebih banyak server ke dalam sistem.
+- Jika ada kegagalam pada satu server, maka load balancer akan mengalihkannya pada server lain yang masih berfungsi, sehingga aplikasi/layanan tetap berjalan tanpa adanya gangguan.
+```
+
+Jenis Load Balancing:
+```
+- Hardware Load Balancer
+- Software Load Balancer
+- Virtual Load Balancer
+```
+
+
 4. Implementasikan loadbalancing kepada aplikasi dumbflix-frontend yang telah digunakan.
