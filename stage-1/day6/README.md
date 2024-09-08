@@ -102,14 +102,27 @@
 
 4. Implementasikan loadbalancing kepada aplikasi dumbflix-frontend yang telah digunakan.
 
-Untuk membuat load balancing pada server, kita akan menambahkan beberapa konfigurasi pada file .conf yang sudah dibuat sebelumnya.
-Disini fungsi dari upstream yaitu untuk menampung beberapa ip aplikasi yang nantinya akan dijalankan dan penamaan proxy_pass diganti dengan nama dari upstream.
+    Untuk membuat load balancing pada server, kita akan menambahkan beberapa konfigurasi pada file .conf yang sudah dibuat sebelumnya.
+   ![lb1](https://github.com/user-attachments/assets/80f29848-92bf-4ed1-94e0-a3dd5ccfed94)
 
-Jika sebelumnya kita sudah clone aplikasi dumbflix pada app1, maka untuk melakukan uji coba load balacing diharuskan untuk clone aplikasi dumbflix juga untuk app2.
-Lalu jangan lupa untuk melakukan pengecekan konfigurasi kembali dengan menjalankan perintah ``` sudo nginx -t ``` dan lakukan restart/reload pada nginx kita
+    Disini fungsi dari upstream yaitu untuk menampung beberapa ip aplikasi yang nantinya akan dijalankan dan penamaan proxy_pass diganti dengan nama dari upstream.
+   ![lb2](https://github.com/user-attachments/assets/8cedd1fe-1a06-4c94-8b8f-62de81d5aa40)
 
-Setelah itu coba jalankan kedua aplikasi kita dengan menggunakan package pm2.
-Jika sudah sekarang kita coba buka browser dan akses nama domain yang sudah dibuat.
+    Jika sebelumnya kita sudah clone aplikasi dumbflix pada app1, maka untuk melakukan uji coba load balacing diharuskan untuk clone aplikasi dumbflix juga untuk app2.
+   ![lb3](https://github.com/user-attachments/assets/edd962bd-e01f-4917-8359-1f59d3ebc5fb)
 
-Lalu kita coba apakah load balancing sudah berjalan dengan baik atau belum dengan cara mematikan salah satu server aplikasi kita.
-Sekarang kita coba akses kembali pada browser apakah domain masih bisa berjalan atau mati.
+    Lalu jangan lupa untuk melakukan pengecekan konfigurasi kembali dengan menjalankan perintah ``` sudo nginx -t ``` dan lakukan restart/reload pada nginx kita.
+   ![lb4](https://github.com/user-attachments/assets/0da80dde-ddc8-46ad-8c3c-dedc9958f204)
+
+    Setelah itu coba jalankan kedua aplikasi kita dengan menggunakan package pm2.
+   ![lb5](https://github.com/user-attachments/assets/352e7fd6-3fe1-4a08-9e77-9b9b6d8ae210)
+
+    Jika sudah sekarang kita coba buka browser dan akses nama domain yang sudah dibuat.
+   ![lb6](https://github.com/user-attachments/assets/417303f1-aed1-4eb7-bbf8-11110b91c4a9)
+
+    Lalu kita coba apakah load balancing sudah berjalan dengan baik atau belum dengan cara mematikan salah satu server aplikasi kita.
+   ![lb7](https://github.com/user-attachments/assets/487c4d27-8e83-486b-8dd9-7ac3f90351f3)
+
+    Sekarang kita coba akses kembali pada browser apakah domain masih bisa berjalan atau mati.
+   ![lb8](https://github.com/user-attachments/assets/dcd30d50-60e6-4e18-813e-c70c8ecde428)
+
