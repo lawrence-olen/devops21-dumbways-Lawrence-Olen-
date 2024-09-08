@@ -101,3 +101,15 @@
 
 
 4. Implementasikan loadbalancing kepada aplikasi dumbflix-frontend yang telah digunakan.
+
+Untuk membuat load balancing pada server, kita akan menambahkan beberapa konfigurasi pada file .conf yang sudah dibuat sebelumnya.
+Disini fungsi dari upstream yaitu untuk menampung beberapa ip aplikasi yang nantinya akan dijalankan dan penamaan proxy_pass diganti dengan nama dari upstream.
+
+Jika sebelumnya kita sudah clone aplikasi dumbflix pada app1, maka untuk melakukan uji coba load balacing diharuskan untuk clone aplikasi dumbflix juga untuk app2.
+Lalu jangan lupa untuk melakukan pengecekan konfigurasi kembali dengan menjalankan perintah ``` sudo nginx -t ``` dan lakukan restart/reload pada nginx kita
+
+Setelah itu coba jalankan kedua aplikasi kita dengan menggunakan package pm2.
+Jika sudah sekarang kita coba buka browser dan akses nama domain yang sudah dibuat.
+
+Lalu kita coba apakah load balancing sudah berjalan dengan baik atau belum dengan cara mematikan salah satu server aplikasi kita.
+Sekarang kita coba akses kembali pada browser apakah domain masih bisa berjalan atau mati.
