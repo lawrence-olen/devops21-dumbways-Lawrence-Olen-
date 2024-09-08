@@ -32,6 +32,27 @@
 
 2. Buatlah Reverse Proxy untuk aplikasi yang sudah di deploy (dumbflix-frontend) dan implemetasikan penggunaan pm2 di aplikasi tersebut. Nama domain sesuaikan nama masing-masing.
 
+Pertama-tama kita diharuskan untuk membuat beberapa VM yang terdiri dari web server dan 2 App.
+Lalu lakukan update dan upgrade terlebih dahulu pada seluruh sistem VM yang sudah dibuat.
+Setelah itu lakukan instalasi web server nginx pada VM yang menjadi web server.
+Jika sudah terinstall kita bisa cek status nginx dengan perintah ``` sudo systemctl status nginx ``` dan cek localhost kita dengan perintah ``` curl localhost ```.
+
+Selanjutnya kita akan melakukan konfigurasi reverse proxy untuk aplikasi dumbflix.
+Pertama kita masuk ke dalam folder nginx, lalu membuat folder & file baru untuk membuat script konfigurasi reverse proxy.
+Setelah itu masukkan konfigurasi berikut pada file .conf yang baru saja dibuat.
+
+Lalu jangan lupa untuk menambahkan konfigurasi baru agar nginx mengetahui dimana posisi reverse proxy kita ada di folder mana, dengan cara ketikkan perintah ``` sudo nano nginx.conf ``` dan tambahkan konfigurasi seperti berikut.
+Jika sudah membuat konfigurasi reverse proxy, jangan lupa untuk melakukan pengecekan konfigurasi dengan menjalankan perintah ``` sudo nginx -t ``` dan lakukan restart/reload pada nginx kita.
+
+Dikarenakan kita masih menggunakan domain custom, maka kita harus setup domain custom kita pada lokal sistem kita dengan masuk ke dalam direktori /etc/hosts, lalu masukkan ip dan domain dari VM yang menjadi server.
+Lalu untuk pembuktian, kita ketikkan domain yang sudah dibuat pada browser kita. Jika masih ada error seperti gambar dibawah itu dikarenakan kita belum menjalankan aplikasi kita.
+Maka dari itu, kita harus melakukan clone & menjalankan aplikasi dumbflix yang sudah disediakan. Untuk langkah-langkahnya sudah ada dan bisa dilihat pada hari sebelumnya.
+Jika sudah kita dapat melihat aplikasi sudah dapat berjalan dan diakses menggunakan domain virtual yang sudah kita buat.
+Dan tambahkan package pm2 pada aplikasi dumbflix.
+
+Terakhir, kita akan mencoba menambahkan file konfigurasi untuk ip dan domain yang berbeda pada nginx agar terlihat perbedaannya.
+
+
 
 3. Jelaskan apa itu load balance.
 
