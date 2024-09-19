@@ -51,11 +51,25 @@ Working Steps:
 
 2. Role Based
    - Membuat database baru bernama demo dan membuat data tabel dummy bernama transaksi.
+     ![step1](https://github.com/user-attachments/assets/4d461133-c3da-49c4-a247-f99f31f81eb5)
+     ![step2](https://github.com/user-attachments/assets/026fd118-bf37-4e40-9b20-257ac4b713e3)
+
    - Membuat 2 role dengan nama 'admin' dan 'guest' yang akan digunakan untuk melihat dan mengelola tabel transaksi yang sudah dibuat.
+     
+     ![step3](https://github.com/user-attachments/assets/a4d9a66b-f9af-4f38-a05c-8fe81dcb82b6)
+
    - Berikan hak akses SELECT, INSERT, UPDATE dan DELETE untuk tabel transaksi pada role admin dan hanya berikan hak akses SELECT pada role guest.
+     ![step4](https://github.com/user-attachments/assets/5c150740-f378-46a6-ae70-71baa8f522bc)
+
    - Membuat pengguna baru dengan nama pengguna 'your_name' dan password 'your_password', lalu tambahkan pengguna ke peran admin.
+     ![step5](https://github.com/user-attachments/assets/91f80ce4-195c-4cd1-b0f3-2afabefe5ad6)
+
    - Membuat pengguna baru dengan nama pengguna 'guest' dan password 'guest', lalu tambahkan pengguna ke peran tamu.
+     ![step6](https://github.com/user-attachments/assets/25e8d5b7-3989-45a3-bcf6-29f0f96a7727)
+
    - Uji coba jalankan user admin maupun guest beserta hak aksesnya.
+     ![step7](https://github.com/user-attachments/assets/7f6743ff-4d0f-45b2-9cf5-2988dd2ecec8)
+     ![step8](https://github.com/user-attachments/assets/2775d37f-9b09-4a78-b3ec-9b494ac5c8d6)
 
 
 3. Remote User
