@@ -50,6 +50,13 @@ Working Steps:
 
 
 2. Role Based
+   - Membuat database baru bernama demo dan membuat data tabel dummy bernama transaksi.
+   - Membuat 2 role dengan nama 'admin' dan 'guest' yang akan digunakan untuk melihat dan mengelola tabel transaksi yang sudah dibuat.
+   - Berikan hak akses SELECT, INSERT, UPDATE dan DELETE untuk tabel transaksi pada role admin dan hanya berikan hak akses SELECT pada role guest.
+   - Membuat pengguna baru dengan nama pengguna 'your_name' dan password 'your_password', lalu tambahkan pengguna ke peran admin.
+   - Membuat pengguna baru dengan nama pengguna 'guest' dan password 'guest', lalu tambahkan pengguna ke peran tamu.
+   - Uji coba jalankan user admin maupun guest beserta hak aksesnya.
+
 
 3. Remote User
    - Mencoba melakukan remote ke database yang sudah dibuat sebelumnya dari lokal komputer dengan menggunakan mysql-client.
