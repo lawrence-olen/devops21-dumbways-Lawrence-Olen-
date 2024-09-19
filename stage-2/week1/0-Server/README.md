@@ -44,7 +44,18 @@ Gateway for deploying Frontend Application, Backend Application, and Web Server.
 8. Lalu coba hubungkan kembali pada server gateway dengan menjalankan perintah ``` ssh gateway ```.
    ![step9](https://github.com/user-attachments/assets/c759c81a-5889-4d2b-ab1a-067f1b1df076)
 
-9. blablabla
+9. Jika sudah masuk ke dalam server jangan lupa untuk melakukan proses update dan upgrade untuk memastikan bahwa semua paket dan dependensi terbaru telah diinstall dengan menjalankan perintah ``` sudo apt update && sudo apt upgrade ```.
+10. Lalu buat pengguna baru dengan menggunakan perintah ``` sudo adduser kingkong ``` untuk meningkatkan keamanan dan mengelola hak akses dengan lebih baik.
+11. Ubah hak akses pengguna yang sudah dibuat agar dapat menggunakan sudo (super user do) dengan menjalankan perintah ``` sudo usermod -aG sudo kingkong ```. 
+12. Setelah itu, sesuaikan konfigurasi SSH untuk memungkinkan koneksi SSH jarak jauh dari terminal lokal dengan mengubah file konfigurasi di direktori ``` /etch/ssh ```. Pastikan autentikasi untuk *PubkeyAuthentication* diaktifkan dan *PasswordAuthentication* dimatikan.
+13. Setelah mengubah konfigurasi SSH, lakukan restart layanan SSH untuk menerapkan perubahan dengan menjalankan perintah ``` sudo systemctl restart sshd ```.
+14. Setelah itu akses kembali server dari user yang sudah dibuat.
+15. Disini server terjadi *Permission denied* karena hanya dapat login dengan menggunakan SSH-KEY yang sudah di konfigurasikan dan tidak dapat masuk menggunakan password.
+16. Maka disini kita akan melakukan generate SSH-KEY terlebih dahulu seperti contoh dibawah ini.
+17. Lalu membuat suatu file yang bernama 'authorized_keys' untuk menyimpan id.pub (gembok) yang sudah kita generate sebelumnya.
+18. Untuk id yang berfungsi sebagai kunci kita simpan di file baru dengan ekstensi (.pem) pada direktori '.ssh' di local komputer kita atau kita dapat menyimpan id.pub dari lokal kita kedalam file 'authorized_keys' yang dimiliki oleh user server kita.
+19. Terakhir kita dapat masuk kedalam server dengan user yang sudah dibuat sebelumnya melalui lokal komputer.
+
 
 **App Server**
 1. Untuk koneksi ke App Server sendiri dapat dilakukan dengan mengikuti langkah-langkah yang sudah dilakukan pada gateway. Hanya saja jika kunci SSH berbeda, maka kita dapat membuat file baru yang berisi kunci SSH untuk app server.
@@ -54,4 +65,6 @@ Gateway for deploying Frontend Application, Backend Application, and Web Server.
 3. Hubungkan kembali pada app server dengan menjalankan perintah ``` ssh apps ```.
    ![step11](https://github.com/user-attachments/assets/4e1aaeb3-7def-4347-b724-cfcdb07d0c7c)
 
-4. Blablabla
+4. Jika sudah masuk ke dalam server jangan lupa untuk melakukan proses update dan upgrade untuk memastikan bahwa semua paket dan dependensi terbaru telah diinstall dengan menjalankan perintah ``` sudo apt update && sudo apt upgrade ```.
+5. Kita dapat membuat user baru (godzilla) dengan mengikuti langkah-langkah yang sudah ada sebelumnya dan coba masuk ke dalam server dengan user yang sudah dibuat.
+
