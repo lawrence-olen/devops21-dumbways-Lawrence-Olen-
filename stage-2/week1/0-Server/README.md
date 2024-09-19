@@ -46,15 +46,33 @@ Gateway for deploying Frontend Application, Backend Application, and Web Server.
 
 9. Jika sudah masuk ke dalam server jangan lupa untuk melakukan proses update dan upgrade untuk memastikan bahwa semua paket dan dependensi terbaru telah diinstall dengan menjalankan perintah ``` sudo apt update && sudo apt upgrade ```.
 10. Lalu buat pengguna baru dengan menggunakan perintah ``` sudo adduser kingkong ``` untuk meningkatkan keamanan dan mengelola hak akses dengan lebih baik.
-11. Ubah hak akses pengguna yang sudah dibuat agar dapat menggunakan sudo (super user do) dengan menjalankan perintah ``` sudo usermod -aG sudo kingkong ```. 
+    ![step12](https://github.com/user-attachments/assets/b0675cf6-5b52-4378-b84b-513355b220df)
+
+11. Ubah hak akses pengguna yang sudah dibuat agar dapat menggunakan sudo (super user do) dengan menjalankan perintah ``` sudo usermod -aG sudo kingkong ```.
+    ![step13](https://github.com/user-attachments/assets/5aae2e6f-242b-4d23-a19c-8d6cf5b3ec8f)
+
 12. Setelah itu, sesuaikan konfigurasi SSH untuk memungkinkan koneksi SSH jarak jauh dari terminal lokal dengan mengubah file konfigurasi di direktori ``` /etch/ssh ```. Pastikan autentikasi untuk *PubkeyAuthentication* diaktifkan dan *PasswordAuthentication* dimatikan.
+    ![step14](https://github.com/user-attachments/assets/588381eb-3149-46f9-8466-2c626021e6df)
+
 13. Setelah mengubah konfigurasi SSH, lakukan restart layanan SSH untuk menerapkan perubahan dengan menjalankan perintah ``` sudo systemctl restart sshd ```.
+    ![step16](https://github.com/user-attachments/assets/e231be8f-24c7-454a-a723-e9aace9876c4)
+
 14. Setelah itu akses kembali server dari user yang sudah dibuat.
 15. Disini server terjadi *Permission denied* karena hanya dapat login dengan menggunakan SSH-KEY yang sudah di konfigurasikan dan tidak dapat masuk menggunakan password.
+    ![step17](https://github.com/user-attachments/assets/a8cf93f8-3d41-4697-8b78-2d83cf7ed563)
+
 16. Maka disini kita akan melakukan generate SSH-KEY terlebih dahulu seperti contoh dibawah ini.
+    ![step18](https://github.com/user-attachments/assets/9f8e1910-6d0b-42cc-a1f9-c04ac7805131)
+
 17. Lalu membuat suatu file yang bernama 'authorized_keys' untuk menyimpan id.pub (gembok) yang sudah kita generate sebelumnya.
+    ![step19](https://github.com/user-attachments/assets/d977a9cd-5f37-47ad-959b-8ebfdd79735b)
+    ![step20](https://github.com/user-attachments/assets/eedd7e2c-1441-44a6-b3fa-852050a7a912)
+
 18. Untuk id yang berfungsi sebagai kunci kita simpan di file baru dengan ekstensi (.pem) pada direktori '.ssh' di local komputer kita atau kita dapat menyimpan id.pub dari lokal kita kedalam file 'authorized_keys' yang dimiliki oleh user server kita.
+    ![step22](https://github.com/user-attachments/assets/5f556cf9-bd9b-4072-82b7-ba0e8624f55a)
+
 19. Terakhir kita dapat masuk kedalam server dengan user yang sudah dibuat sebelumnya melalui lokal komputer.
+    ![step23](https://github.com/user-attachments/assets/b370feab-aa3c-4fe2-aa62-4541d97b2fe8)
 
 
 **App Server**
@@ -67,4 +85,6 @@ Gateway for deploying Frontend Application, Backend Application, and Web Server.
 
 4. Jika sudah masuk ke dalam server jangan lupa untuk melakukan proses update dan upgrade untuk memastikan bahwa semua paket dan dependensi terbaru telah diinstall dengan menjalankan perintah ``` sudo apt update && sudo apt upgrade ```.
 5. Kita dapat membuat user baru (godzilla) dengan mengikuti langkah-langkah yang sudah ada sebelumnya dan coba masuk ke dalam server dengan user yang sudah dibuat.
+   ![step24](https://github.com/user-attachments/assets/50222f87-21bb-4b70-a39b-ea0627644745)
+
 
