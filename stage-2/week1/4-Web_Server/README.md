@@ -42,13 +42,31 @@ Working Steps:
 
    B. Backend
    - Membuat konfigurasi reverse proxy kembali pada sisi backend.
+     ![step1](https://github.com/user-attachments/assets/d60d14e7-53a3-49d7-b8a0-aedcfd5cc73d)
+
    - Membuat suatu direktori yang berisi Email dan API_KEY dari akun Certbot kita dan buatlah permission agar file tersebut lebih aman.
+     ![step2](https://github.com/user-attachments/assets/ba03a78e-356d-4ee7-af00-d8b057eef491)
+     ![step3](https://github.com/user-attachments/assets/a26e45e0-fcb2-4857-af7d-824964e6f528)
+
    - Lakukan installasi certbot apabila belum ada, jika sudah maka lakukan langkah-langkah seperti diatas.
+     ![step4](https://github.com/user-attachments/assets/acb0d0d3-9c0d-452d-a912-d02d5673d269)
+
    - Cek kembali apakah ssl certbot sudah terpasang pada web browser dengan mengakses domain yang sudah dibuat.
+     ![step5](https://github.com/user-attachments/assets/5834fbb4-f56a-4fb2-bd3d-89ca799bcad1)
+
 
    C. Pengujian
    - Pertama kita mengubah terlebih dahulu konfigurasi pada file src/config/api.js pada frontend.
+     ![step6](https://github.com/user-attachments/assets/5a081a8c-b791-437d-8b4f-3f7e3708e2f1)
+
    - Lalu jalankan projek menggunakan package pm2.
+     ![step10](https://github.com/user-attachments/assets/61abc807-6d08-4d3f-aca9-36687b1ec3db)
+
    - Cek pada web browser apakah dapat berjalan, lalu lakukan register dan login pada aplikasi.
+     ![step7](https://github.com/user-attachments/assets/f1e582ff-0ce5-4217-82aa-f2e434ea680f)
+     ![step8](https://github.com/user-attachments/assets/c6ad82cd-78fd-4626-9a3c-13d61e5bc07d)
+
    - Jika ingin memastikan apakah registrasi kita terdaftar dapat dilihat pada database yang sudah kita lihat sebelumnya.
+     ![step9](https://github.com/user-attachments/assets/ebe9134e-0055-437a-b0ac-3d1de1f4a700)
+
 
