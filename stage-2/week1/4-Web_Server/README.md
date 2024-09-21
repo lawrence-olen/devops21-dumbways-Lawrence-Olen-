@@ -39,3 +39,16 @@ Working Steps:
 
    - Jika sudah ada, maka kita coba cek jalankan di web browser dan melihat apakah sudah ada ssl certbot (protokol keamanan internet) pada domain web kita.
      ![step10](https://github.com/user-attachments/assets/7b3736ce-22c1-4ba5-880c-988192b46234)
+
+   B. Backend
+   - Membuat konfigurasi reverse proxy kembali pada sisi backend.
+   - Membuat suatu direktori yang berisi Email dan API_KEY dari akun Certbot kita dan buatlah permission agar file tersebut lebih aman.
+   - Lakukan installasi certbot apabila belum ada, jika sudah maka lakukan langkah-langkah seperti diatas.
+   - Cek kembali apakah ssl certbot sudah terpasang pada web browser dengan mengakses domain yang sudah dibuat.
+
+   C. Pengujian
+   - Pertama kita mengubah terlebih dahulu konfigurasi pada file src/config/api.js pada frontend.
+   - Lalu jalankan projek menggunakan package pm2.
+   - Cek pada web browser apakah dapat berjalan, lalu lakukan register dan login pada aplikasi.
+   - Jika ingin memastikan apakah registrasi kita terdaftar dapat dilihat pada database yang sudah kita lihat sebelumnya.
+
