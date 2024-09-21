@@ -70,3 +70,9 @@ Working Steps:
      ![step9](https://github.com/user-attachments/assets/ebe9134e-0055-437a-b0ac-3d1de1f4a700)
 
 
+   D. Implementasi Wildcard SSL
+   - Disini kita langsung saja untuk menjalankan certbot untuk mendapatkan Wildcard SSL dikarenakan sudah melakukan konfigurasi sebelumnya. Apabila terdapat error seperti ini, itu dikarenakan plugin belum diinstall.
+   - Install plugin Certbot DNS Cloudflare dengan perintah ``` sudo apt install python3-certbot-dns-cloudflare ```.
+   - Cek plugin yang tersedia.
+   - Jalankan ulang certbot.
+
