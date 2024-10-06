@@ -9,6 +9,8 @@ Buatlah ansible untuk :
    - Generated SSL certificate
 
 # Arsitektur Ansible
+![arsitektur_ansible](https://github.com/user-attachments/assets/545f6549-ce44-4b80-9365-7865769c17c5)
+
 
 # Working Steps
 
