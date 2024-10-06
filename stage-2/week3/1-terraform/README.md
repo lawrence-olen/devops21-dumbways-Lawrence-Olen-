@@ -30,28 +30,28 @@
 
    ![task3](https://github.com/user-attachments/assets/cd706389-3d6d-4c13-9bd8-bed75249bc0b)
 
-7. Lalu membuat file ssh_key.pub.
+6. Lalu membuat file ssh_key.pub.
    File ini berisi kunci publik yang akan digunakan oleh otentikasi SSH pada VM.
 
-8. Setelahnya kita akan membuat file variables.tf
+7. Setelahnya kita akan membuat file variables.tf
    File ini digunakan untuk mendeklarasikan variabel yang dapat digunakan pada file apapun.
 
    ![task4](https://github.com/user-attachments/assets/c158c91c-73d0-4600-ac3a-8acc46ed5578)
 
-10. Lalu kita juga dapat membuat file terraform.tfvars
+8. Lalu kita juga dapat membuat file terraform.tfvars
    File ini digunakan untuk mendefinisikan nilai pada file variabel.tf
    ![task5](https://github.com/user-attachments/assets/a4c66702-7e5b-4e25-a3e2-6e7d74f243ca)
 
-11. Lalu ada file output.tf (opsional)
+9. Lalu ada file output.tf (opsional)
    File ini digunakan untuk melihat output yang diinginkan seperti IP Publik, ataupun sumber daya lainnya.
 
       ![task6](https://github.com/user-attachments/assets/c7f72a5f-65c4-4f8c-acaf-982f8a217b9f)
 
-13. Dan yang terakhir kita membuat file main.tf
+10. Dan yang terakhir kita membuat file main.tf
     File utama yang digunakan untuk konfigurasi terraform, disini kita akan mengelola seluruh projek terraform yang diinginkan.
    ![task7](https://github.com/user-attachments/assets/c9bbc8cf-5dbd-4afc-be7b-b34a22b622a7)
 
-14. Jika kita sudah selesai membuat konfigurasi, kita dapat menggunakan beberapa perintah dengan urutan seperti dibawah ini
+11. Jika kita sudah selesai membuat konfigurasi, kita dapat menggunakan beberapa perintah dengan urutan seperti dibawah ini
     ```
         terraform init
         terraform validate
@@ -59,27 +59,27 @@
         terraform apply
     ```
 
-15. Membuat 2 buah server dengan OS ubuntu 24 dan debian 11
+12. Membuat 2 buah server dengan OS ubuntu 24 dan debian 11
     ![task8](https://github.com/user-attachments/assets/c9d4f9e2-f701-47ae-836d-9c83b99172ad)
 
-17. Melakukan attach vpc ke dalam server
+13. Melakukan attach vpc ke dalam server
 
     ![task9](https://github.com/user-attachments/assets/9d279c58-ba30-47ce-85ce-e066a7d712fa)
 
-19. Melakukan attach ip static ke vm
+14. Melakukan attach ip static ke vm
 
     ![task10](https://github.com/user-attachments/assets/7de1ce7c-8877-48ef-b008-fa46f1649207)
 
-21. Memasang firewall ke dalam server dengan rule {allow all ip(0.0.0.0/0)}
+15. Memasang firewall ke dalam server dengan rule {allow all ip(0.0.0.0/0)}
     ![task11](https://github.com/user-attachments/assets/64998360-5d91-40dc-b406-e04c542049cd)
 
-23. Membuat 2 block storage di dalam terraform
+16. Membuat 2 block storage di dalam terraform
 
     ![task12](https://github.com/user-attachments/assets/ec7861b3-1f61-402b-a4b0-d45ca9503cd3)
 
-25. Testing ssh ke server
+17. Testing ssh ke server
 
     ![task14](https://github.com/user-attachments/assets/dd89afcf-1c76-462e-88c9-6ea7c1361b78)
 
-27. Hasil dalam VM Machine di GCP
+18. Hasil dalam VM Machine di GCP
     ![task13](https://github.com/user-attachments/assets/41265696-5a12-4d07-8ceb-5c1ca9a936db)
