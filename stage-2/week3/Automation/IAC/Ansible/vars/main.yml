@@ -1,0 +1,6 @@
+---
+# vars file for Ansible
+ansible_user: crocox
+ansible_connection: ssh
+ansible_ssh_pass: "$6$TceUPPpiQ2TAV09z$Q7kd7ZA9Te/LR4Yv2t24zRZqvhYOFbEIEaN3.Lb5fUfDcwp5gnxRS0GZuBGEZ8Tq5XXND3BlymiR1sxXRV/mN." #mkpasswd
+ansible_sudo_pass: "$6$TceUPPpiQ2TAV09z$Q7kd7ZA9Te/LR4Yv2t24zRZqvhYOFbEIEaN3.Lb5fUfDcwp5gnxRS0GZuBGEZ8Tq5XXND3BlymiR1sxXRV/mN." #mkpasswd

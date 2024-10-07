@@ -1,0 +1,21 @@
+---
+- name: "Install SSL Certbot using snap"
+  snap:
+    name: certbot
+    classic: true
+    state: present
+
+- name: "Prepare Certbot symlink"
+  command: ln -s /snap/bin/certbot /usr/bin/certbot
+  args:
+    removes: /usr/bin/certbot  # Jika sudah ada tidak akan membuat baru
+
+- name: "Trust cloudflare DNS plugin"
+  command: snap set certbot trust-plugin-with-root=ok
+
+- name: "Install cloudflare DNS plugin"
+  snap:
+    name: certbot-dns-cloudflare
+    state: present
+
+- include_tasks: tasks/frontend/directory_secret.yml

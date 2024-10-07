@@ -1,0 +1,91 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+
+    - name: "Include All in one"
+      import_role:
+        name: Ansible
+        tasks_from: update_upgrade.yml
+
+    - name: "Create New User"
+      import_role:
+        name: Ansible
+        tasks_from: user.yml
+
+    - name: "Installation Nginx"
+      import_role:
+        name: Ansible
+        tasks_from: nginx.yml
+
+    - name: "Installation Docker and Docker Compose"
+      remote_user: "{{ new_user }}"
+      import_role:
+        name: Ansible
+        tasks_from: docker.yml
+
+    - name: "Generate SSL Certbot"
+      remote_user: "{{ new_user }}"
+      import_role:
+        name: Ansible
+        tasks_from: frontend/certbot_generate.yml
+
+    - name: "Reverse Proxy using Nginx"
+      remote_user: "{{ new_user }}"
+      import_role:
+        name: Ansible
+        tasks_from: frontend/reverse_proxy.yml # Membuat file nginx pada frontend dan monitoring
+
+    - name: "Deploy Frontend Application"
+      remote_user: "{{ new_user }}"
+      import_role:
+        name: Ansible
+        tasks_from: frontend/checking_docker.yml
+
+- hosts: Biznet
+  become: yes
+  remote_user: "{{ new_user }}"
+  tasks:
+    - name: "Deploy node exporter"
+      import_role:
+        name: Ansible
+        tasks_from: monitoring/install_node.yml
+
+- hosts: GCP
+  become: yes
+  remote_user: "{{ new_user }}"
+  tasks:
+    - name: "Deploy Monitoring Prometheus for Main Server"
+      import_role:
+        name: Ansible
+        tasks_from: monitoring/deploy_monitoring.yml
+      when: ansible_hostname == "34.124.180.2"
+      tags: prometheus
+    
+    - name: "Install Node Exporter for server"
+      import_role:
+        name: Ansible
+        tasks_from: monitoring/install_node.yml 
+      when: ansible_hostname == "34.87.12.227"
+      tags: node_exporter
+
+
+# ```
+# - name: Testing
+#   hosts: all
+#   become: true
+#   roles:
+#     - user
+#     - docker
+#     - monitoring
+#   tags: setu[
+# ```
+
+# - name: Use role in loop
+#   ansible.builtin.include_role:
+#     name: '{{ roleinputvar }}'
+#   loop:
+#     - '{{ roleinput1 }}'
+#     - '{{ roleinput2 }}'
+#   loop_control:
+#     loop_var: roleinputvar

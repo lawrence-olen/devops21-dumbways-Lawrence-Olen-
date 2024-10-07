@@ -1,0 +1,8 @@
+[GCP]
+# 34.124.175.134  # Testing Server
+34.124.180.2    # Frontend Server
+34.87.12.227    # Terraform Ubuntu
+
+[Biznet]
+103.127.136.82  # Gateway Server
+103.196.153.93  # App Server

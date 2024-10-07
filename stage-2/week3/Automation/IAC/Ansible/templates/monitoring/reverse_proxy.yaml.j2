@@ -1,0 +1,74 @@
+upstream server_node {
+    server 103.127.136.82:9100;
+    server 103.196.153.93:9100;
+    server 34.124.180.2:9100;
+}
+
+server {
+    listen 80;
+    server_name exporter.olen.studentdumbways.my.id;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name exporter.olen.studentdumbways.my.id;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+    location / {
+        proxy_pass http://server_node;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+server {
+    listen 80;
+    server_name prom.olen.studentdumbways.my.id;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name prom.olen.studentdumbways.my.id;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+    location / {
+        proxy_pass http://34.124.180.2:9090;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+server {
+    listen 80;
+    server_name monitoring.olen.studentdumbways.my.id;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 80;
+    listen 443 ssl;
+    server_name monitoring.olen.studentdumbways.my.id;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+    location / {
+        proxy_pass http://34.124.180.2:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

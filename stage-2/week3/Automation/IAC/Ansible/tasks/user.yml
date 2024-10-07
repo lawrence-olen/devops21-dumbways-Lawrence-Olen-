@@ -1,0 +1,38 @@
+---
+- name: "Create New User"
+  user:
+    name: "{{ new_user }}"
+    password: "$6$TceUPPpiQ2TAV09z$Q7kd7ZA9Te/LR4Yv2t24zRZqvhYOFbEIEaN3.Lb5fUfDcwp5gnxRS0GZuBGEZ8Tq5XXND3BlymiR1sxXRV/mN." #mkpasswd
+    shell: /bin/bash
+    groups: sudo
+    state: present
+    system: false
+    create_home: true
+    home: "/home/{{ new_user }}"
+
+# - include_tasks: enabled_ssh.yml  # Memanggil file enabled-ssh.yml saat user ingin dibuat
+
+- name: "Setup configuration SSH Key and Password"
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: "{{ item.before }}"
+    line: "{{ item.after }}"
+  loop:
+    - { before: '#PasswordAuthentication no', after: 'PasswordAuthentication yes'}
+    - { before: '#PubkeyAuthentication no', after: 'PubkeyAuthentication yes'}
+
+- name: "Setup configuration file clouding"
+  lineinfile:
+    path: /etc/ssh/sshd_config.d/60-cloudimg-settings.conf
+    regexp: 'PasswordAuthentication no'
+    line: PasswordAuthentication yes
+
+- name: "Set Reload SSHD config"
+  systemd_service:
+    name: sshd
+    state: restarted
+
+# - name: "Enabled SSH"
+#   service:
+#     name: ssh
+#     enabled: false

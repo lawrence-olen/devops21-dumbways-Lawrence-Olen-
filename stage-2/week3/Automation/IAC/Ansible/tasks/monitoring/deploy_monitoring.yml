@@ -1,0 +1,13 @@
+---
+# Deploy Monitoring for All Servers
+- include_tasks: tasks/monitoring/create_dco.yml
+
+- name: "Run docker compose down for Monitoring"
+  command: docker compose -f docker-compose.monitoring.yml down
+  args:
+    chdir: "/home/{{ new_user }}"
+
+- name: "Run docker compose for Monitoring"
+  command: docker compose -f docker-compose.monitoring.yml up -d
+  args:
+    chdir: "/home/{{ new_user }}"

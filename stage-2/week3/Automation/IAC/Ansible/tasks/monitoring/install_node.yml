@@ -1,0 +1,13 @@
+---
+# Create file node exporter for server
+- name: "Copy and create file node exporter.yml"
+  template:
+    src: ../../templates/monitoring/node_exporter.j2
+    dest: "/home/{{ new_user }}/docker-compose.node.yml"
+  tags: node_exporter
+  # ansible-playbook playbook.yml --tags node_exporter
+
+- name: "Deploy Node Exporter"
+  command: docker compose -f docker-compose.node.yml up -d
+  args:
+    chdir: "/home/{{ new_user }}"

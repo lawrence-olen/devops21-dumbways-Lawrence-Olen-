@@ -1,0 +1,14 @@
+---
+# Create file monitoring for 1 server main
+- name: "Only install Prometheus on the main server"
+  # when: ansible_host == "34.124.180.2"
+  block:
+    - name: "Copy and create file monitoring.yml"
+      template: 
+        src: ../../templates/monitoring/docker_compose_mon.yaml.j2
+        dest: "/home/{{ new_user }}/docker-compose.monitoring.yml"
+
+    - name: "Copy and create file prometheus.yml"
+      template:
+        src: ../../templates/monitoring/prometheus.yaml.j2
+        dest: "/home/{{ new_user }}/prometheus.yml"

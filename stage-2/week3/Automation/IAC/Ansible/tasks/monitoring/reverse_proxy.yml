@@ -1,0 +1,13 @@
+---
+- name: "Create directory for Monitoring Proxy"
+  file:
+    path: "/home/{{ new_user }}/monitoring"
+    state: directory
+    mode: '0775' 
+    owner: "{{ new_user }}"
+    group: "{{ new_user }}"
+
+- name: "Create file monitoring.conf"
+  template:
+    src: ../../templates/monitoring/reverse-proxy.yaml.j2
+    dest: "/home/{{ new_user }}/monitoring/monitoring.conf"

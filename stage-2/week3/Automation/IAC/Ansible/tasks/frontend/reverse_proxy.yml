@@ -1,0 +1,36 @@
+---
+# - name: "Make sure nginx is started"
+#   command: systemctl is-active nginx
+#   register: nginx_status
+#   ignore_errors: true # Mengabaikan error jika nginx tidak aktif
+
+# - name: "Start nginx if not started"
+#   systemd:
+#     name: nginx
+#     state: started
+#     enabled: true
+#   when: nginx_status.stdout != "active"  # Menyalakan jika tidak aktif
+#   register: start_nginx_result
+#   ignore_errors: true  # Abaikan jika ada kesalahan
+
+# - name: "Show result"
+#   debug:
+#     msg: "{{ start_nginx_result }}"
+
+- name: "Create directory for Nginx"
+  file:
+    path: "/home/{{ new_user }}/nginx/conf.d"
+    state: directory
+    mode: '0775' 
+    owner: "{{ new_user }}"
+    group: "{{ new_user }}"
+
+- name: "Create file reverse proxy frontend"
+  template:
+    src: ../../templates/frontend/reverse-proxy.yaml.j2
+    dest: "/home/{{ new_user }}/nginx/conf.d/frontend.conf"
+
+- name: "Create file reverse proxy monitoring"
+  template:
+    src: ../../templates/monitoring/reverse_proxy.yaml.j2
+    dest: "/home/{{ new_user }}/nginx/conf.d/monitoring.conf"

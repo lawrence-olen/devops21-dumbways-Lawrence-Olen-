@@ -1,0 +1,5 @@
+---
+- name: "Enabled SSH"
+  service:
+    name: ssh
+    enabled: true

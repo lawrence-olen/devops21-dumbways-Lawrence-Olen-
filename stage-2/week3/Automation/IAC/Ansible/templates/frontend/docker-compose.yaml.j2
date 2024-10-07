@@ -1,0 +1,28 @@
+services:
+    frontend:
+        container_name: frontend
+        image: crocoxolen/frontend:staging
+        restart: always
+        ports:
+        - "3001:3000"
+        - "444:443"
+        networks:
+        - ansible
+    
+    nginx:
+        container_name: nginx
+        image: nginx:latest
+        restart: always
+        ports:
+        - "80:80"
+        - "443:443"
+        volumes:
+        - ./nginx/conf.d/:/etc/nginx/conf.d/
+        - /etc/letsencrypt/live/olen.studentdumbways.my.id/fullchain.pem:/etc/nginx/ssl/fullchain.pem
+        - /etc/letsencrypt/live/olen.studentdumbways.my.id/privkey.pem:/etc/nginx/ssl/privkey.pem
+        networks:
+        - ansible
+
+networks:
+    ansible:
+        driver: bridge

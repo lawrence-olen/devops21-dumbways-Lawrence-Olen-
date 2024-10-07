@@ -1,0 +1,28 @@
+upstream server_ansible {
+    server 34.124.180.2:3001;
+    server 103.127.136.82:3001;
+    server 103.196.153.93:3001;
+}
+
+server {
+    listen 80;
+    server_name ansible.olen.studentdumbways.my.id;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name ansible.olen.studentdumbways.my.id;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+    location / {
+        proxy_pass http://server_ansible;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+

@@ -1,0 +1,11 @@
+---
+- name: "Installation Nginx"
+  apt:
+    name: nginx
+    state: latest
+
+# Digunakan saat terjadi error apabila port 80 sudah terpakai
+- name: "Stop Nginx"
+  service:
+    name: nginx
+    state: stopped 

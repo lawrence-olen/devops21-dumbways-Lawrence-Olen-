@@ -1,0 +1,33 @@
+---
+- name: "Checking if Docker Compose Installed"
+  command: docker compose version
+  register: docker_compose_check
+  ignore_errors: true # Mengabaikan error apabila docker compose belum terinstall
+
+- name: "Installation Docker and Docker Compose"
+  import_tasks: ./docker.yml
+  when: docker_compose_check.rc != 0 # Terinstall rc == 0
+
+# - name: "Stop process using port 80"
+#   command: lsof -ti:80 | xargs kill -9
+#   ignore_errors: true # Mengabaikan error jika tidak ada proses yang berjalan di port 80
+
+- include_tasks: tasks/frontend/pull_image.yml
+
+- name: "Copy docker-compose.yml to server"
+  copy:
+    src: ../../templates/frontend/docker-compose.yaml.j2
+    dest: "/home/{{ new_user }}/docker-compose.yaml"
+    owner: "{{ new_user }}"
+    group: "{{ new_user }}"
+    mode: '0644'
+
+- name: "Build Docker Images with no cache"
+  command: docker compose build --no-cache
+  args:
+    chdir: "/home/{{ new_user }}"
+
+- name: "Deploy Frontend Application"
+  command: docker compose up -d # --remove-orphans
+  args:
+    chdir: "/home/{{ new_user }}"

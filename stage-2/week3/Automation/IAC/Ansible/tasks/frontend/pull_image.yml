@@ -1,0 +1,6 @@
+---
+- name: "Pull Image from Docker Hub"
+  docker_image:
+    name: crocoxolen/frontend
+    tag: staging
+    source: pull

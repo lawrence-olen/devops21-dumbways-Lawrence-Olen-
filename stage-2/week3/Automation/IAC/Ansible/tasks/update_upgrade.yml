@@ -1,0 +1,5 @@
+---
+- name: "Update and Upgrade System"
+  apt:
+    update_cache: true
+    upgrade: dist

@@ -1,0 +1,11 @@
+---
+- name: "Run Certbot to generate certificates"
+  command: >
+    certbot certonly
+    --dns-cloudflare
+    --dns-cloudflare-credentials /home/{{ new_user }}/.secrets/cloudflare.ini
+    --agree-tos
+    --non-interactive
+    --email lawrencenoman@gmail.com
+    --domains exporter-olen.studentdumbways.my.id -v
+  timeout: 60
